@@ -1,0 +1,18 @@
+@import "../variables";
+
+.introduction {
+  @extend %flex-row;
+  justify-content: space-between;
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  &-text {
+    width: 50%;
+  }
+  &-image {
+    width: 40%;
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "../variables";
+
+.hero {
+  width: 100%;
+  height: calc(100vh - 60px);
+  position: relative;
+  padding-top: 60px;
+  background-color: rgba(0,0,0,0.5);
+  background-image: url("https://images.unsplash.com/photo-1548404412-f27160c85ecb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1616&q=80");
+  background-size: cover;
+  background-blend-mode: darken;
+  color: #fff;
+  @extend %flex;
+  &--inner {
+    @extend %flex-column;
+  }
+}

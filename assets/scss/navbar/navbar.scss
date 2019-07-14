@@ -1,0 +1,30 @@
+@import '../variables';
+
+.navbar {
+  @extend %flex;
+  height: 60px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  box-shadow: $colo-dark-transparent;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  background-color: $colo-dark-transparent;
+  transition: background-color 0.3s ease-in-out;
+  &.white {
+    background-color: #fff;
+    transition: background-color 0.3s ease-in-out;
+    ul li a {
+      color: rgba(0,0,0,0.8);
+    }
+  }
+  ul {
+    @extend %flex-row;
+    width: 80%;
+    justify-content: space-around;
+    list-style: none;
+    li a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

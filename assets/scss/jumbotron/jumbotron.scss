@@ -1,0 +1,17 @@
+@import "../variables";
+
+.jumbotron {
+  @extend %flex;
+  background-image: url("https://media.macphun.com/img/uploads/uploads/skylum/luminar/Raffaele-Cabras_5-bef.jpg?size=1x&q=20");
+  background-color: rgba(0,0,0,0.5);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  padding: 200px 0;
+  margin: 60px 0;
+  h3 {
+    max-width: 60%;
+    margin: auto;
+  }
+}

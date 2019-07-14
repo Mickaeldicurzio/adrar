@@ -1,0 +1,10 @@
+@import '../variables';
+
+.columnParagraphe {
+  @extend %flex-row;
+  justify-content: space-around;
+  margin: 60px 0;
+  p {
+    max-width: 45%;
+  }
+}

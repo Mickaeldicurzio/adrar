@@ -1,0 +1,22 @@
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+%flex-row {
+  @extend %flex;
+  flex-direction: row;
+}
+
+%flex-column {
+  @extend %flex;
+  flex-direction: column;
+}
+
+
+// color
+
+$colo-dark-transparent: rgba(0,0,0,0.5);
+$colo-white-transparent: rgba(255,255,255,0.5);
